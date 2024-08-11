@@ -2,6 +2,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+.background{
+    width: 90%;
+    margin: 0 auto 0 auto ; 
+    background-color: white;
+}
 
 .flex {
     display: flex;
@@ -55,7 +60,28 @@ nav {
     background-color: white;
     color: #c30e0e;
 }
-
+.gioithieu{
+    display: none !important;
+    position: absolute;
+    padding:0; 
+    margin: 0;
+    background-color:white;
+}
+.gioithieu>li{
+    list-style-type: none;
+    padding: 0.6rem;
+   border: 1px solid black;
+   border-top: none;
+}
+.gioithieu>li>a{
+    text-decoration: none;
+    color: #cc2129;
+    padding: 0.5rem;
+    text-align: center;
+}
+.sub:hover .gioithieu{
+    display: block !important;
+}
 /*FOOTER*/
 footer {
     background-color: #cc2129;
