@@ -1,0 +1,30 @@
+/**/
+.title{
+    color: #b30000;
+    font-size: 2rem;
+    font-weight: bold; 
+}
+th{
+   border: 2px solid black; 
+   padding: 1rem;
+}
+th>div{
+    margin-left: 1rem;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+tr>th:last-child{
+    border-left: none;
+}
+.bang{
+    color: black;
+    font-size: 1rem;
+    text-align:left ;
+}
+.nobold{
+    font-weight: normal;
+}
