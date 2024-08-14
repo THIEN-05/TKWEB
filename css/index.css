@@ -1,6 +1,9 @@
+/*hinh*/
+
+
 
 /* main*/
-.tuade{
+.tuade {
     color: #c10505;
 }
 
@@ -9,43 +12,50 @@
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
 }
 
 .book img {
     width: 100%;
 }
-.dam{
+
+.dam {
     font-weight: bold;
 }
-.course{
+
+.course {
     width: 70%;
     margin: 0 auto;
 }
 
-.forum{
-    background-color:#fbe8e9 ;
+.forum {
+    background-color: #fbe8e9;
     border: 1px solid red;
     border-radius: 10px 10px 10px 10px;
 }
-.forum>h1{
+
+.forum>h1 {
     margin-left: 1rem;
 }
-.nut{
-    background-color:#4472c4 ;
+
+.nut {
+    background-color: #4472c4;
     color: white;
     padding: 0.7rem 1.8rem;
     margin-right: 1rem;
     border-radius: 10px 10px 10px 10px;
     border: 1px solid black;
 }
-.link>a{
+
+.link>a {
     color: #65a9d9;
     text-decoration: none;
 }
-.kitu{
+
+.kitu {
     color: black;
 }
-.link{
+
+.link {
     padding-bottom: 1rem;
 }
