@@ -8,39 +8,57 @@
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="/javasrip/test.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
     <title>Tạp chí khoa học Đại học Mở Thành phố Hồ Chí Minh</title>
+
 </head>
 
-<body>
-    
-    <header class="hinh block">
-        <video src="/picture/video1.mp4" class="vi-bg" autoplay muted loop></video>
-        <div class="flex area">
-            <div class="logo">
-                <img src="../picture/logo.png" alt="logo" />
+<body class="block">
+
+    <header class="block">
+
+        <section>
+            <video src="/picture/main.mp4" class="vi-bg" autoplay muted loop></video>
+
+            <div class="area">
+                <div class="flex">
+                    <div class="logo animate__animated animate__backInLeft">
+                        <img src="../picture/logo.png" alt="logo" />
+                    </div>
+                    <div class=" tentruong animate__animated animate__backInRight">
+                        <h1>
+                            TẠP CHÍ KHOA HỌC</br>
+                            TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH
+                        </h1>
+                    </div>
+                </div>
+
             </div>
-            <div class=" tentruong">
-                <h1>
-                    TẠP CHÍ KHOA HỌC</br>
-                    TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH
-                </h1>
+            <div class="click">
+                <a href="#click">
+                    <img src="/picture/click.png" alt="click">
+                </a>
             </div>
-        </div>
-        <nav class="indam">
+        </section>
+        <nav class="indam animate__animated animate__backInDown">
             <div class="nax flex">
                 <div class="menu">
                     <ul class="flex">
                         <li><a href="/web/index.html">TRANG CHỦ</a></li>
                         <li class="sub">
                             <a href="#"> GIỚI THIỆU</a>
-                            <ul class="gioithieu">
-                                <li>
-                                    <a href="/web/mucdichphamvi.html">Mục đích - Phạm vi</a>
-                                </li>
-                                <li>
-                                    <a href="/web/nhansu.html">Nhân sự</a>
-                                </li>
-                            </ul>
+                            <div class="menu">
+                                <ul class="gioithieu">
+                                    <li>
+                                        <a href="/web/mucdichphamvi.html">Mục đích</a>
+                                    </li>
+                                    <li>
+                                        <a href="/web/nhansu.html">Nhân sự</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a href="#">GỬI BÀI</a></li>
                         <li><a href="#">CÁC SỐ ĐÃ RA</a></li>
@@ -50,7 +68,7 @@
                 </div>
                 <div class="menu">
                     <ul class="flex">
-                        <li><a href="#">ĐĂNG NHẬP</a></li>
+                        <li><a href="#" id="show-login">ĐĂNG NHẬP</a></li>
                         <li><a href="#">TIẾNG VIỆT</a></li>
                     </ul>
                 </div>
@@ -58,46 +76,97 @@
         </nav>
     </header>
     <main>
+        <div class="popup">
+            <div class="content">
+                <div class="close">&times;</div>
+                <h2>Đăng nhập</h2>
+                <div class="form-element">
+                    <label for="email">Tên người dùng hoặc Email</label>
+                    <input type="text" id="email" placeholder="Nhập tên người dùng hoặc Email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-element remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Giữ phiên đăng nhập</label>
+                </div>
+                <a href="#" class="button">Đăng nhập</a>
+                <div class="form-element">
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("show-login").addEventListener("click", function() {
+                document.querySelector(".popup").style.display = "flex";
+            });
+            document.querySelector(".close").addEventListener("click", function() {
+                document.querySelector(".popup").style.display = "none";
+            });
+        </script>
+
+
+
+
+
+
+
+
         <section>
             <h2 class="tuade">
                 Tạp chí mới
             </h2>
         </section>
         <section>
+            <div id="click"></div>
             <div class="books flex">
+
                 <div class="book">
-                    <img src="../picture/economic.jpg" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/tech-en"> <img src="../picture/book2.jpg"
+                            alt="picture">
+                    </a>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/tech-en">
+                        <h5>ENGINEERING AND TECHNOLOGY</h5>
+                    </a>
                 </div>
                 <div class="book">
-                    <img src="../picture/economic.jpg" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/soci-en"> <img src="../picture/book3.jpg"
+                            alt="picture"></a>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/soci-en">
+                        <h5>SOCIAL SCIENCES</h5>
+                    </a>
                 </div>
                 <div class="book">
-                    <img src="../picture/economic.jpg" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
-                </div>
-                <div class="book">
-                    <img src="../picture/economic.jpg" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/econ-vi"><img src="../picture/book4.png"
+                            alt="picture"></a>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/econ-vi">
+                        <h5>KINH TẾ VÀ QUẢN TRỊ KINH DOANH</h5>
+                    </a>
                 </div>
             </div>
             <div class="books flex">
                 <div class="book">
-                    <img src="../picture/khxh.png" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/tech-vi"><img src="../picture/book5.png"
+                            alt="picture"></a>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/tech-vi">
+                        <h5>KỸ THUẬT VÀ CÔNG NGHỆ</h5>
+                    </a>
                 </div>
                 <div class="book">
-                    <img src="../picture/khxh.png" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/soci-vi"> <img src="../picture/book6.png"
+                            alt="picture"></a>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/soci-vi">
+                        <h5>KHOA HỌC XÃ HỘI</h5>
+                    </a>
                 </div>
                 <div class="book">
-                    <img src="../picture/khxh.png" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
-                </div>
-                <div class="book">
-                    <img src="../picture/khxh.png" alt="picture">
-                    <h5>TẠP CHÍ KHOA HỌC</h5>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/proc-vi"><img src="../picture/book7.jpg"
+                            alt="picture"></a>
+                    <a href="https://journalofscience.ou.edu.vn/index.php/proc-vi">
+                        <h5>PROCCEDINGS</h5>
+                    </a>
                 </div>
             </div>
         </section>
@@ -179,28 +248,98 @@
         <section class="course">
             <div class="flex forum">
                 <h1>
-                    ...</br>Đăng kí gửi bài tại đây
+                    Đăng kí gửi bài tại đây
                 </h1>
                 <input class="nut" type="submit" value="Gửi bài" />
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2 class="tuade">CHU KỲ XUẤT BẢN CỦA TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH
+                    (Áp dụng từ 2024) </h2>
+                    <div class="chuky1">
+                    <ul class="chuky">
+                        <li><h4>HCMCOUJS - ECONOMICS AND BUSINESS ADMINISTRATION</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 02</li>
+                                <li>Issue 2: tháng 04</li>
+                                <li>Issue 3: tháng 06</li>
+                                <li>Issue 4: tháng 08</li>
+                            </ul>
+                        </li>
+                        <li><h4>HCMCOUJS - ENGINEERING AND TECHNOLOGY</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 03</li>
+                                <li>Issue 2: tháng 10</li>
+                            </ul>
+                        </li>
+                        <li><h4>HCMCOUJS - SOCIAL SCIENCES</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 02</li>
+                                <li>Issue 2: tháng 06</li>
+                                <li>Issue 3: tháng 08</li>
+                                <li>Issue 4: tháng 12</li>
+                            </ul>
+                        </li>
+                        <li><h4>HCMCOU JOURNAL OF SCIENCE - ADVANCES IN COMPUTATIONAL STRUCTURES</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 03</li>
+                                <li>Issue 2: tháng 07</li>
+                            </ul>
+                        </li>
+                        <li><h4>HCMCOUJS - KINH TẾ VÀ QUẢN TRỊ KINH DOANH</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 01</li>
+                                <li>Issue 2: tháng 02</li>
+                                <li>Issue 3: tháng 03</li>
+                                <li>Issue 4: tháng 04</li>
+                                <li>Issue 5: tháng 05</li>
+                                <li>Issue 6: tháng 06</li>
+                                <li>Issue 7: tháng 07</li>
+                                <li>Issue 8: tháng 08</li>
+                                <li>Issue 9: tháng 09</li>
+                                <li>Issue 10: tháng 10</li>
+                                <li>Issue 11: tháng 11</li>
+                                <li>Issue 12: tháng 12</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>HCMCOUJS - KỸ THUẬT VÀ CÔNG NGHỆ</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 04</li>
+                                <li>Issue 2: tháng 09</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>HCMCOUJS - KHOA HỌC XÃ HỘI</h4>
+                            <ul class="chuky">
+                                <li>Issue 1: tháng 05</li>
+                                <li>Issue 2: tháng 11</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section>
             <h2 class="tuade">
                 Thông báo - Tin tức
             </h2>
-            <div class="link">
-                <a href="#">
-                    <span class="kitu">></span> Điểm công trình khoa học HĐGSNN năm 2024
-                </a></br>
-                <a href="#">
-                    <span class="kitu">></span> Thống nhất áp dụng tiêu chuẩn APA 7th
-                </a></br>
-                <a href="#">
-                    <span class="kitu">></span> Tạp chí khoa học Trường Đại học Mở Thành phố Hồ Chí Minh tiếp tục
-                    được chấp thuận trong danh mục
-                    hệ
-                    thống trích dẫn ASEAN (ACI)
-                </a></br>
+            <div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH TIẾP TỤC ĐƯỢC CHẤP THUẬN TRONG DANH MỤC HỆ THỐNG TRÍCH DẪN ASEAN (ACI)</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">ĐIỂM CÔNG TRÌNH KHOA HỌC HỘI ĐỒNG GIÁO SƯ NHÀ NƯỚC NĂM 2023 CỦA CÁC TẠP CHÍ CHUYÊN NGÀNH</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH THÔNG BÁO VỀ VIỆC CUNG CẤP BỘ DỮ LIỆU NGHIÊN CỨU CỦA BÀI BÁO</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH - KINH TẾ VÀ QUẢN TRỊ KINH DOANH THÔNG BÁO VỀ VIỆC ÁP DỤNG MÃ PHÂN LOẠI TẠP CHÍ KINH TẾ (CODE JEL)</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MÌNH NẰM TRONG DANH MỤC CÁC TẠP CHÍ KHOA HỌC ĐƯỢC PHÊ DUYỆT TĂNG ĐIỂM CÔNG TRÌNH NĂM 2021 VÀ 2022</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">THÔNG BÁO NGƯNG TẶNG TẠP CHÍ ĐẾN TÁC GIẢ</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC CHẤP NHẬN THAM GIA HỆ THỐNG TRÍCH DẪN ACI</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC CHẤP NHẬN THAM GIA HỆ THỐNG THƯ MỤC TẠP CHÍ TRUY CẬP MỞ QUỐC TẾ DOAJ</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÁC TẠP CHÍ KHOA HỌC CHUYÊN NGÀNH CỦA TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC XẾP HẠNG TRONG CÔNG BỐ XẾP HẠNG CHỈ SỐ ẢNH HƯỞNG (IMPACT FACTOR) CỦA CÁC TẠP CHÍ KHOA HỌC VIỆT NAM NĂM 2020</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">QUYẾT ĐỊNH SỐ 559/GP-BTTTT: BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP GIẤY PHÉP HOẠT ĐỘNG TẠP CHÍ IN VÀ TẠP CHÍ ĐIỆN TỬ MỚI CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">GIẤY PHÉP SỐ 03/GP-TTĐT: CHO PHÉP TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH THIẾT LẬP TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÔNG VĂN SỐ 01/TTHKCN-ISSN: CẤP CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH MÃ SỐ CHUẨN QUỐC TẾ e-ISSN CHO 6 XUẤT BẢN PHẨM ĐIỆN TỬ</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÔNG VĂN SỐ 34/TTKHCN-ISSN: CẤP CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH MÃ SỐ CHUẨN QUỐC TẾ ISSN CHO 6 XUẤT BẢN PHẨM</a></div>
+                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH NẰM TRONG DANH MỤC CÁC TẠP CHÍ KHOA HỌC ĐƯỢC PHÊ DUYỆT TĂNG ĐIỂM CÔNG TRÌNH NĂM 2020</a></div>
             </div>
         </section>
     </main>
@@ -234,11 +373,10 @@
                     Trưởng ban Thư ký: ThS. Nguyễn Phạm Thiên Kim</br>
                     Thư ký Tòa soạn: ThS. Đặng Thị Thảo Ly</br>
                     Thư ký Tòa soạn: ThS. Hồ Thị Bảo Uyên</br>
-                    Email:journalofscience@ou.edu.vn</br>
+                    Email: <a class="email">journalofscience@ou.edu.vn</a></br>
                     Điện thoại/Fax: (+84)28 39 333 688
                 </div>
             </div>
-
         </div>
         <div class="end">
             &copy; 2024 HCMCOU. All rights reserved.

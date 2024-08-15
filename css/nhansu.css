@@ -1,11 +1,12 @@
 /**/
 .title{
-    color: #b30000;
+    color: white;
     font-size: 2rem;
     font-weight: bold; 
+    text-shadow: 3px 2px 4px whitesmoke;
 }
 th{
-   border: 2px solid black; 
+   border: 2px solid rgb(217, 215, 215); 
    padding: 1rem;
 }
 th>div{
@@ -14,17 +15,18 @@ th>div{
 table{
     width: 100%;
     border-collapse: collapse;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 tr>th:last-child{
     border-left: none;
 }
 .bang{
-    color: black;
+ 
     font-size: 1rem;
     text-align:left ;
 }
 .nobold{
     font-weight: normal;
 }
+
