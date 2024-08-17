@@ -6,38 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tạp chí khoa học Trường Đại học Mở Thành phố Hồ Chí Minh</title>
     <link rel="stylesheet" href="/css/font.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="/css/mucdichphamvi.css">
+    <script src="/javasrip/test.js"></script>
 </head>
 
 <body>
     
    
-    <header class="block">
+    <header class="block header1">
 
         <section>
-            <video src="/picture/video1.mp4" class="vi-bg" autoplay muted loop></video>
-
-            <div class="area">
+            <div class="area1">
                 <div class="flex">
-                    <div class="logo">
+                    <div class="logo animate__animated animate__backInLeft">
                         <img src="../picture/logo.png" alt="logo" />
                     </div>
-                    <div class=" tentruong">
+                    <div class=" tentruong animate__animated animate__backInRight">
                         <h1>
                             TẠP CHÍ KHOA HỌC</br>
                             TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH
                         </h1>
                     </div>
-                </div>
-                
-            </div>
-            <div class="click">
-                    <a href="#click">
-                        <img src="/picture/click.png" alt="click">
-                    </a>
-                </div>
+                </div>               
+            </div>          
         </section>
-        <nav class="indam">
+        <nav class="indam animate__animated animate__backInDown">
             <div class="nax flex">
                 <div class="menu">
                     <ul class="flex">
@@ -70,7 +65,29 @@
             </div>
         </nav>
     </header>
-        
+        <main>
+            <div class="popup">
+                <div class="content">
+                    <div class="close">&times;</div>
+                    <h2>Đăng nhập</h2>
+                    <div class="form-element">
+                        <label for="email">Tên người dùng hoặc Email</label>
+                        <input type="text" id="email" placeholder="Nhập tên người dùng hoặc Email">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" id="password" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="form-element remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Giữ phiên đăng nhập</label>
+                    </div>
+                    <a href="#" class="button">Đăng nhập</a>
+                    <div class="form-element">
+                        <a href="#">Quên mật khẩu?</a>
+                    </div>
+                </div>
+            </div>
         <section class="mucdich">
         </br>
             <h1 class="title" >MỤC ĐÍCH - PHẠM VI</h1>
@@ -115,6 +132,7 @@
             </li>
            </ul> 
         </section>
+    </main>
         <footer class="information block">
             <div class="information flex">
                 <div class="inf1 block">
