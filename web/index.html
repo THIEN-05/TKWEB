@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="/css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="/javasrip/test.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="/css/mobileindex.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
+
     <title>Tạp chí khoa học Đại học Mở Thành phố Hồ Chí Minh</title>
 
 </head>
@@ -20,14 +24,15 @@
     <header class="block">
 
         <section>
-            <video src="/picture/main.mp4" class="vi-bg" autoplay muted loop></video>
+            <video src="/picture/main.mp4" class="vi-bg animate__animated animate__fadeInDownBig" autoplay muted
+                loop></video>
 
             <div class="area">
                 <div class="flex">
-                    <div class="logo animate__animated animate__backInLeft">
+                    <div class="logo animate__animated animate__fadeInLeft">
                         <img src="../picture/logo.png" alt="logo" />
                     </div>
-                    <div class=" tentruong animate__animated animate__backInRight">
+                    <div class=" tentruong animate__animated animate__fadeInRight">
                         <h1>
                             TẠP CHÍ KHOA HỌC</br>
                             TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH
@@ -42,38 +47,46 @@
                 </a>
             </div>
         </section>
-        <nav class="indam animate__animated animate__backInDown">
-            <div class="nax flex">
-                <div class="menu">
-                    <ul class="flex">
-                        <li><a href="/web/index.html">TRANG CHỦ</a></li>
-                        <li class="sub">
-                            <a href="#"> GIỚI THIỆU</a>
-                            <div class="menu">
-                                <ul class="gioithieu">
-                                    <li>
-                                        <a href="/web/mucdichphamvi.html">Mục đích</a>
-                                    </li>
-                                    <li>
-                                        <a href="/web/nhansu.html">Nhân sự</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">GỬI BÀI</a></li>
-                        <li><a href="#">CÁC SỐ ĐÃ RA</a></li>
-                        <li><a href="#">THÔNG BÁO</a></li>
-                        <li><a href="/web/lienhe.html">LIÊN HỆ</a></li>
-                    </ul>
+            <nav class="indam animate__animated animate__fadeInDown">
+                <div class="all">
+                <a href="#" class="home">≡  </a>
+                    
+                    <div class="nax flex">
+                        <div class="menu">
+                            <ul class="flex">
+                                <li><a href="/web/index.html">TRANG CHỦ</a></li>
+                                <li class="sub">
+                                    <a href="#" class="none"> GIỚI THIỆU</a>
+                                    <a href="/web/mucdichphamvi.html" class="noen">MỤC ĐÍCH</a>
+                                   
+                                    <div class="menu">
+                                        <ul class="gioithieu">
+                                            <li>
+                                                <a href="/web/mucdichphamvi.html">Mục đích</a>
+                                            </li>
+                                            <li>
+                                                <a href="/web/nhansu.html">Nhân sự</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="noen"><a href="/web/nhansu.html" >NHÂN SỰ</a></li> 
+                                <li><a href="#">GỬI BÀI</a></li>
+                                <li><a href="#">CÁC SỐ ĐÃ RA</a></li>
+                                <li><a href="#">THÔNG BÁO</a></li>
+                                <li><a href="/web/lienhe.html">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <ul class="flex">
+                                <li><a href="#" id="show-login">ĐĂNG NHẬP</a></li>
+                                <li><a href="#">TIẾNG VIỆT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+              
                 </div>
-                <div class="menu">
-                    <ul class="flex">
-                        <li><a href="#" id="show-login">ĐĂNG NHẬP</a></li>
-                        <li><a href="#">TIẾNG VIỆT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
     </header>
     <main>
         <div class="popup">
@@ -159,7 +172,7 @@
                 Mục đích - Phạm vi
             </h2>
             <div>
-                TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH – KHOA HỌC XÃ HỘI (sau đây gọi tắt là Tạp chí) là
+                <span class="indam">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH – KHOA HỌC XÃ HỘI</span> (sau đây gọi tắt là Tạp chí) là
                 tạp
                 chí học thuật chuyên ngành, có phản biện kín hai chiều và truy cập mở. Tạp chí hoạt động và phát
                 triển
@@ -182,7 +195,7 @@
                 Các lĩnh vực cụ thể bao gồm:
             </div>
             <div>
-                <ul>
+                <ul class="noidung">
                     <li>
                         <span class="dam">
                             Giáo dục học:
@@ -238,12 +251,13 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="chuky0">
                 <h2 class="tuade">CHU KỲ XUẤT BẢN CỦA TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH
                     (Áp dụng từ 2024) </h2>
-                    <div class="chuky1">
+                <div class="chuky1">
                     <ul class="chuky">
-                        <li><h4>HCMCOUJS - ECONOMICS AND BUSINESS ADMINISTRATION</h4>
+                        <li>
+                            <h4>HCMCOUJS - ECONOMICS AND BUSINESS ADMINISTRATION</h4>
                             <ul class="chuky">
                                 <li>Issue 1: tháng 02</li>
                                 <li>Issue 2: tháng 04</li>
@@ -251,13 +265,15 @@
                                 <li>Issue 4: tháng 08</li>
                             </ul>
                         </li>
-                        <li><h4>HCMCOUJS - ENGINEERING AND TECHNOLOGY</h4>
+                        <li>
+                            <h4>HCMCOUJS - ENGINEERING AND TECHNOLOGY</h4>
                             <ul class="chuky">
                                 <li>Issue 1: tháng 03</li>
                                 <li>Issue 2: tháng 10</li>
                             </ul>
                         </li>
-                        <li><h4>HCMCOUJS - SOCIAL SCIENCES</h4>
+                        <li>
+                            <h4>HCMCOUJS - SOCIAL SCIENCES</h4>
                             <ul class="chuky">
                                 <li>Issue 1: tháng 02</li>
                                 <li>Issue 2: tháng 06</li>
@@ -265,13 +281,15 @@
                                 <li>Issue 4: tháng 12</li>
                             </ul>
                         </li>
-                        <li><h4>HCMCOU JOURNAL OF SCIENCE - ADVANCES IN COMPUTATIONAL STRUCTURES</h4>
+                        <li>
+                            <h4>HCMCOU JOURNAL OF SCIENCE - ADVANCES IN COMPUTATIONAL STRUCTURES</h4>
                             <ul class="chuky">
                                 <li>Issue 1: tháng 03</li>
                                 <li>Issue 2: tháng 07</li>
                             </ul>
                         </li>
-                        <li><h4>HCMCOUJS - KINH TẾ VÀ QUẢN TRỊ KINH DOANH</h4>
+                        <li>
+                            <h4>HCMCOUJS - KINH TẾ VÀ QUẢN TRỊ KINH DOANH</h4>
                             <ul class="chuky">
                                 <li>Issue 1: tháng 01</li>
                                 <li>Issue 2: tháng 02</li>
@@ -310,20 +328,59 @@
                 Thông báo - Tin tức
             </h2>
             <div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH TIẾP TỤC ĐƯỢC CHẤP THUẬN TRONG DANH MỤC HỆ THỐNG TRÍCH DẪN ASEAN (ACI)</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">ĐIỂM CÔNG TRÌNH KHOA HỌC HỘI ĐỒNG GIÁO SƯ NHÀ NƯỚC NĂM 2023 CỦA CÁC TẠP CHÍ CHUYÊN NGÀNH</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH THÔNG BÁO VỀ VIỆC CUNG CẤP BỘ DỮ LIỆU NGHIÊN CỨU CỦA BÀI BÁO</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH - KINH TẾ VÀ QUẢN TRỊ KINH DOANH THÔNG BÁO VỀ VIỆC ÁP DỤNG MÃ PHÂN LOẠI TẠP CHÍ KINH TẾ (CODE JEL)</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MÌNH NẰM TRONG DANH MỤC CÁC TẠP CHÍ KHOA HỌC ĐƯỢC PHÊ DUYỆT TĂNG ĐIỂM CÔNG TRÌNH NĂM 2021 VÀ 2022</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">THÔNG BÁO NGƯNG TẶNG TẠP CHÍ ĐẾN TÁC GIẢ</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC CHẤP NHẬN THAM GIA HỆ THỐNG TRÍCH DẪN ACI</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC CHẤP NHẬN THAM GIA HỆ THỐNG THƯ MỤC TẠP CHÍ TRUY CẬP MỞ QUỐC TẾ DOAJ</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÁC TẠP CHÍ KHOA HỌC CHUYÊN NGÀNH CỦA TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC XẾP HẠNG TRONG CÔNG BỐ XẾP HẠNG CHỈ SỐ ẢNH HƯỞNG (IMPACT FACTOR) CỦA CÁC TẠP CHÍ KHOA HỌC VIỆT NAM NĂM 2020</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">QUYẾT ĐỊNH SỐ 559/GP-BTTTT: BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP GIẤY PHÉP HOẠT ĐỘNG TẠP CHÍ IN VÀ TẠP CHÍ ĐIỆN TỬ MỚI CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">GIẤY PHÉP SỐ 03/GP-TTĐT: CHO PHÉP TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH THIẾT LẬP TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÔNG VĂN SỐ 01/TTHKCN-ISSN: CẤP CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH MÃ SỐ CHUẨN QUỐC TẾ e-ISSN CHO 6 XUẤT BẢN PHẨM ĐIỆN TỬ</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÔNG VĂN SỐ 34/TTKHCN-ISSN: CẤP CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH MÃ SỐ CHUẨN QUỐC TẾ ISSN CHO 6 XUẤT BẢN PHẨM</a></div>
-                <div class="kitu"><a href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH NẰM TRONG DANH MỤC CÁC TẠP CHÍ KHOA HỌC ĐƯỢC PHÊ DUYỆT TĂNG ĐIỂM CÔNG TRÌNH NĂM 2020</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH TIẾP TỤC ĐƯỢC CHẤP THUẬN TRONG DANH MỤC HỆ THỐNG TRÍCH DẪN
+                        ASEAN (ACI)</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">ĐIỂM CÔNG
+                        TRÌNH KHOA HỌC HỘI ĐỒNG GIÁO SƯ NHÀ NƯỚC NĂM 2023 CỦA CÁC TẠP CHÍ CHUYÊN NGÀNH</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH THÔNG BÁO VỀ VIỆC CUNG CẤP BỘ DỮ LIỆU NGHIÊN CỨU CỦA BÀI
+                        BÁO</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH - KINH TẾ VÀ QUẢN TRỊ KINH DOANH THÔNG BÁO VỀ VIỆC ÁP DỤNG
+                        MÃ PHÂN LOẠI TẠP CHÍ KINH TẾ (CODE JEL)</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MÌNH NẰM TRONG DANH MỤC CÁC TẠP CHÍ KHOA HỌC ĐƯỢC PHÊ DUYỆT TĂNG
+                        ĐIỂM CÔNG TRÌNH NĂM 2021 VÀ 2022</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">THÔNG BÁO
+                        NGƯNG TẶNG TẠP CHÍ ĐẾN TÁC GIẢ</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC CHẤP NHẬN THAM GIA HỆ THỐNG TRÍCH DẪN ACI</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC CHẤP NHẬN THAM GIA HỆ THỐNG THƯ MỤC TẠP CHÍ TRUY CẬP
+                        MỞ QUỐC TẾ DOAJ</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÁC TẠP CHÍ
+                        KHOA HỌC CHUYÊN NGÀNH CỦA TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH ĐƯỢC XẾP HẠNG TRONG CÔNG BỐ
+                        XẾP HẠNG CHỈ SỐ ẢNH HƯỞNG (IMPACT FACTOR) CỦA CÁC TẠP CHÍ KHOA HỌC VIỆT NAM NĂM 2020</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">QUYẾT ĐỊNH SỐ
+                        559/GP-BTTTT: BỘ THÔNG TIN VÀ TRUYỀN THÔNG CẤP GIẤY PHÉP HOẠT ĐỘNG TẠP CHÍ IN VÀ TẠP CHÍ ĐIỆN TỬ
+                        MỚI CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">GIẤY PHÉP SỐ
+                        03/GP-TTĐT: CHO PHÉP TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH THIẾT LẬP TRANG THÔNG TIN
+                        ĐIỆN TỬ TỔNG HỢP</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÔNG VĂN SỐ
+                        01/TTHKCN-ISSN: CẤP CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH MÃ SỐ CHUẨN QUỐC TẾ
+                        e-ISSN CHO 6 XUẤT BẢN PHẨM ĐIỆN TỬ</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">CÔNG VĂN SỐ
+                        34/TTKHCN-ISSN: CẤP CHO TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH MÃ SỐ CHUẨN QUỐC TẾ
+                        ISSN CHO 6 XUẤT BẢN PHẨM</a></div>
+                <div class="kitu"><a
+                        href="https://journalofscience.ou.edu.vn/index.php/index/about/announcements_home">TẠP CHÍ KHOA
+                        HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH NẰM TRONG DANH MỤC CÁC TẠP CHÍ KHOA HỌC ĐƯỢC PHÊ DUYỆT TĂNG
+                        ĐIỂM CÔNG TRÌNH NĂM 2020</a></div>
             </div>
         </section>
     </main>
@@ -363,7 +420,7 @@
             </div>
         </div>
         <div class="end">
-            &copy; 2024 HCMCOU. All rights reserved.
+            <span>&copy; 2024 HCMCOU. All rights reserved.</span>
         </div>
     </footer>
 </body>

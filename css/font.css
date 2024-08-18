@@ -1,7 +1,7 @@
 /*ALL*/
 body {
     font-family: "Montserrat";
-    background: linear-gradient(rgb(1, 1, 6),rgb(2, 2, 50));
+    background: linear-gradient(rgb(1, 1, 6), rgb(2, 2, 50));
     color: white;
 }
 
@@ -43,6 +43,9 @@ section {
 }
 
 /*NAV*/
+.noen{
+    display: none !important;
+}
 body {
     margin: 0;
     padding: 0;
@@ -59,7 +62,8 @@ header {
     overflow: hidden;
     height: 100vh;
 }
-.header1{
+
+.header1 {
     overflow: hidden;
     height: 25vh;
     background: linear-gradient(black, blue)
@@ -74,17 +78,19 @@ header {
     min-height: 100%;
 }
 
+
 .area {
     margin-top: 4rem;
     position: sticky;
     width: 100%;
 }
 
-.area1{
+.area1 {
     margin-top: 4rem;
     position: sticky;
     width: 100%;
 }
+
 .logo {
     float: left;
     margin: auto 0;
@@ -94,11 +100,13 @@ nav {
     position: fixed !important;
     top: 0;
     width: 100%;
+    z-index: 99999999;
 }
 
 .nax {
     position: absolute;
     width: 100%;
+   
     background-color: #070a0e;
 }
 
@@ -144,19 +152,34 @@ nav {
     text-decoration: none;
     color: white;
     padding: 0.2rem;
-    text-align: center;   
+    text-align: center;
 }
 
 .sub:hover .gioithieu {
     display: block !important;
 }
-.menu>ul>li{
+.all{
+    margin-top: 0 !important;
+}
+.home{
+    width: 100%;
+    top:0;
+    text-decoration: none;
+    color: white;
+    background: rgba(0,0,0,0.9);
+    padding-left: 4px;
+  padding-bottom: 2px;
+    font-size: 3rem;
+    display: none;
+}
+.menu>ul>li {
     position: relative;
     display: block;
     transition: 0.5s;
     cursor: pointer;
 }
-.menu>ul>li::after{
+
+.menu>ul>li::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -168,21 +191,26 @@ nav {
     transform-origin: right;
     background-color: white;
 }
-.menu>ul>li:hover{
+
+.menu>ul>li:hover {
     color: aliceblue;
 }
-.menu>ul>li:hover::after{
+
+.menu>ul>li:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
 /*FOOTER*/
 footer {
-    background-color: #4472c4;
+    background: linear-gradient(black,blue, black);
+    overflow: hidden;
 }
 
 .information {
     color: white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 
 }
 
@@ -193,28 +221,43 @@ footer {
 }
 
 .inf111 {
-    margin-right: auto;
+  margin-right: auto;
+    padding-right: 2rem;
 }
 
 .inf12 {
     padding-left: 4rem;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .inf2 {
     margin-right: 2rem;
+    padding-right: 2rem;
 }
 
 .end {
     text-align: center;
-    background-color: blue;
+    background-color: transparent;
 }
+
+.end>span {
+    font-weight: bold;
+    animation: move linear 10s infinite;
+    position: relative;
+}
+
 
 .fa-brands fa-vaadin {
     position: fixed;
 }
 
 /*click*/
-.click>a{
+.click {
+    margin-left: 2rem;
+}
+
+.click>a {
     position: absolute;
     color: white;
     padding: 0;
@@ -223,37 +266,32 @@ footer {
     text-align: center;
     font-size: 2rem;
 }
-.click img{
+
+.click img {
     width: 2rem;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 130px;
 }
+
 /*icon click*/
-.icon{
+.icon {
     width: 50px;
 }
+
 /*email*/
-.email{
+.email {
     color: whitesmoke;
     text-decoration: none;
 }
-.email:hover{
+
+.email:hover {
     color: aqua;
 }
-/*chu kỳ*/
-.chuky>li{
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.chuky1{
-    border-top: 1px dashed whitesmoke;
-}
+
+
 /**/
 .popup {
     display: none;
@@ -262,7 +300,8 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Giảm opacity nền */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Giảm opacity nền */
     justify-content: center;
     align-items: center;
 }
@@ -274,11 +313,14 @@ html{
     width: 300px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    z-index: 1000; /* Đảm bảo nội dung hiển thị trên nền */
+    z-index: 1000;
+    /* Đảm bảo nội dung hiển thị trên nền */
 }
-.content>h2{
+
+.content>h2 {
     color: black !important;
 }
+
 .close {
     color: rgb(247, 246, 246);
     position: absolute;
@@ -295,7 +337,7 @@ html{
 }
 
 .form-element label {
-  color: black;
+    color: black;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -322,7 +364,7 @@ html{
 
 .button {
     display: inline-block;
-    background-color:#000100;
+    background-color: #000100;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -343,4 +385,15 @@ html{
 
 .form-element a:hover {
     text-decoration: underline;
+}
+
+
+@keyframes move {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 50%;
+    }
 }
