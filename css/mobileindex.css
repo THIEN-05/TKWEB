@@ -1,0 +1,105 @@
+ .flex {
+     flex-direction: column;
+     align-items: initial;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+ }
+
+ .home {
+     display: block;
+ }
+
+ .home a {
+     color: white;
+ }
+
+.click{
+    display: none;
+}
+
+ .nax {
+     display: none;
+     background: rgb(0, 0, 0, 0.8);
+ }
+
+ .all:hover .nax {
+     display: block;
+ }
+ .noen{
+    display: block !important;
+ }
+ .none{
+    display: none !important;
+ }
+
+ .books {
+     flex-direction: row;
+ }
+
+ .logo {
+     padding-right: 3rem;
+     box-shadow: 3px 4px 5px whitesmoke;
+ }
+ .tentruong{
+    text-shadow: 3px 4px 5px white;
+ }
+
+ .sub:hover .gioithieu {
+    display: none !important;
+}
+.close{
+    top: 5rem;
+}
+.tuade{
+    top: 2rem;
+}
+.noidung>li{
+   padding: 1rem;
+}
+.course{
+    width: 80%;
+}
+.forum>h1{
+    font-size: 1rem;
+}
+.forum{
+    border: 1px solid blue;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.chuki1{
+    width: 100%;
+
+}
+.chuki0{
+    width: 100%;
+}  
+
+.nut{
+    padding: 2px !important;
+}
+.end{
+    padding-top: 1rem;
+}
+.inf12{
+   display: none;
+}
+.inf111{
+    width: 100%;
+    text-align: center;
+}
+.inf2{
+    width: 100%;
+}
+.inf2>div{
+    width: 100%;
+    text-align: center;
+
+}
+.thongtinlienhe{
+  align-items: center;
+}
+

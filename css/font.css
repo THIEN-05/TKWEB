@@ -1,0 +1,564 @@
+/*ALL*/
+body {
+    font-family: "Montserrat";
+    background: linear-gradient(rgb(1, 1, 6), rgb(2, 2, 50));
+    color: white;
+}
+
+main {
+    top: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block {
+    display: block;
+}
+
+section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3; 
+    pointer-events: none; 
+    z-index: -1; 
+    width: 400px;
+    height: auto;
+}
+
+
+
+/*header*/
+.tentruong {
+    color: white;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    text-align: center;
+
+}
+
+.logo img {
+    width: 100%;
+    padding-left: 2.5rem;
+    /* animation: animatelogo 6s infinite linear; */
+}
+
+.header1 img {
+    animation: animatelogo 10s infinite linear;
+}
+
+.indam {
+    font-weight: bold;
+}
+
+/*NAV*/
+.noen {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.fix {
+    clear: both;
+    overflow: hidden;
+}
+
+header {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.header1 {
+    height: auto;
+    background: linear-gradient(black, blue, black);
+}
+
+.header1 h1 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-shadow: 3px 4px 5px whitesmoke;
+}
+
+.header1 img {
+    width: 80%;
+    box-shadow: 4px 5px 6px white;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.6rem;
+    padding-left: 0rem;
+    margin-left: 2rem;
+}
+
+.vi-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.area {
+    margin-top: 4rem;
+    position: sticky;
+    width: 100%;
+}
+
+.area1 {
+    margin-top: 4rem;
+    position: sticky;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    margin: auto 0;
+}
+
+nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.nax {
+    position: absolute;
+    width: 100%;
+    background-color: #070a0e;
+}
+
+.menu>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.menu>ul>li:first-child {
+    border-left: none;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.menu>ul>li>a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.gioithieu {
+    display: none !important;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: #010107;
+}
+
+.gioithieu>li {
+    list-style-type: none;
+    padding: 0.2rem;
+}
+
+.gioithieu>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.sub:hover .gioithieu {
+    display: block !important;
+}
+
+.all {
+    margin-top: 0 !important;
+}
+
+.home {
+    width: 100%;
+    top: 0;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.9);
+    padding-left: 4px;
+    padding-bottom: 2px;
+    font-size: 3rem;
+    display: none;
+}
+
+.menu>ul>li {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu>ul>li::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: white;
+}
+
+.menu>ul>li:hover {
+    color: aliceblue;
+}
+
+.menu>ul>li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(black,blue,black);
+    overflow: hidden;
+}
+
+.information {
+    color: white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+}
+
+.inf11>div img {
+    width: 60px;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.inf111 {
+    margin-right: auto;
+    padding-right: 2rem;
+}
+
+.inf12 {
+    padding-left: 4rem;
+    padding-top: 1rem;
+}
+
+.inf2 {
+    margin-right: 2rem;
+    padding-right: 2rem;
+}
+
+.end {
+    text-align: center;
+    background-color: transparent;
+}
+
+.end>span {
+    font-weight: bold;
+    animation: move linear 10s infinite;
+    position: relative;
+}
+
+
+.fa-brands fa-vaadin {
+    position: fixed;
+}
+
+/*click*/
+.click {
+    margin-left: 2rem;
+}
+
+.click>a {
+    position: absolute;
+    color: white;
+    padding: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: none;
+    animation: bounce 2s ease infinite;
+}
+
+.click img {
+    width: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+/*icon click*/
+.icon {
+    width: 50px;
+}
+
+/*email*/
+.email {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: aqua;
+}
+
+
+/*POPUP LOGIN*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; 
+}
+
+.popup.fade-out {
+    animation: fadeOut 0.5s forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transform: scale(0.8);
+    animation: scaleUp 0.3s forwards; 
+}
+
+.content>h2 {
+    color: black !important;
+}
+
+.content.fade-out {
+    animation: scaleDown 0.3s forwards; 
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+
+.close {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.form-element {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.form-element label {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-element input[type="text"],
+.form-element input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000100;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0b3868;
+}
+
+.form-element a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-element a:hover {
+    text-decoration: underline;
+}
+
+/*LOGO*/
+
+@keyframes animatelogo {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    75% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes move {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+/*go to top*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 43px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*icon*/
+.icon {
+    width: 100%;
+}
+
+.icon img {
+    width: 30px;
+    padding: 3px;
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.icon img:hover {
+    border: 1px solid aqua;
+    border-radius: 50%;
+    transform: 2s;
+}
+
+/*show ảnh*/
+.popupanh {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999999999999999;
+    text-align: center;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.popupanh img {
+    height: 80vh;
+    margin-top: 6rem;
+    
+}
+a.closeanh{
+    font-size: 3rem;
+    text-decoration: none;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    color: white;
+}
+.show{
+    display: block !important;
+}

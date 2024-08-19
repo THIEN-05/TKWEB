@@ -1,0 +1,47 @@
+.maudo{
+    color: #cb3a3a;
+    
+}
+.block1{
+    width: 100%;
+   margin: 2rem 1rem;
+    border-radius: 10px 10px 10px 10px;
+   
+}
+
+.block1>div{
+    font-weight: bold;
+    text-align: center;
+}
+.anh img{
+    width: 120px
+}
+.name{
+    margin-right: auto;
+    width: 100%;
+}
+.name a{
+    color: white;
+    text-decoration: none;
+}
+.box{  
+    border: 3px solid white;
+    width: 33%;
+    background: rgba(255,255,255,0.5);
+    text-align: left;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 3px 4px 5px white;   
+}
+.box:hover{
+    background:rgb(255, 255, 255,0.7);
+    color: black !important;
+    transform: scale(1.02,1.03);
+}
+.block1 div:hover{
+    color: aqua;
+    transform: scale(1.02,1.03);
+}
+
+
