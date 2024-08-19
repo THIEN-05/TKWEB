@@ -16,17 +16,27 @@ window.onload = function () {
 
     wow = new WOW(
         {
-        boxClass:     'wow',      // default
-        animateClass: 'animate__animated', // default
-        offset:       0,          // default
-        mobile:       true,       // default
-        live:         true        // default
+        boxClass:     'wow',     
+        animateClass: 'animate__animated', 
+        offset:       0,          
+        mobile:       true,       
+        live:         true       
       }
       )
       wow.init();
 
-    //   p.onclick=function(){
-    //     document.getElementById("clicknav").style.display="block";
-        
-    //   }
+}
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

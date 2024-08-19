@@ -25,7 +25,6 @@
 
  .all:hover .nax {
      display: block;
-
  }
  .noen{
     display: block !important;
@@ -100,3 +99,7 @@
     text-align: center;
 
 }
+.thongtinlienhe{
+  align-items: center;
+}
+

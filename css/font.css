@@ -64,9 +64,22 @@ header {
 }
 
 .header1 {
-    overflow: hidden;
-    height: 25vh;
-    background: linear-gradient(black, blue)
+   height: auto;
+    background: linear-gradient(black,blue, black);
+}
+.header1 h1{
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-shadow: 3px 4px 5px whitesmoke;
+}
+.header1 img{
+    width: 80%;
+    box-shadow: 4px 5px 6px white;
+    background: rgba(0,0,0,0.1);
+    margin-bottom: 0.6rem;
+    padding-left: 0rem;
+    margin-left: 2rem;
 }
 
 .vi-bg {
@@ -105,8 +118,7 @@ nav {
 
 .nax {
     position: absolute;
-    width: 100%;
-   
+    width: 100%;  
     background-color: #070a0e;
 }
 
@@ -304,6 +316,7 @@ html {
     /* Giảm opacity nền */
     justify-content: center;
     align-items: center;
+    z-index: 99999999999999999;
 }
 
 .content {
@@ -324,7 +337,8 @@ html {
 .close {
     color: rgb(247, 246, 246);
     position: absolute;
-    top: 10px;
+    top: 3rem;
+    z-index: 999999999999999999;
     right: 15px;
     font-size: 2rem;
     font-weight: bold;
@@ -396,4 +410,24 @@ html {
     to {
         left: 50%;
     }
+}
+/*go to top*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 43px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+   
+    background: rgba(0,0,0,0.6);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }

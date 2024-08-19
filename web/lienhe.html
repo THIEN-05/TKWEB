@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/css/font.css">
     <script src="/javasrip/test.js"></script>
- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/mobileindex.css" media="screen and (max-width:600px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/css/lienhe.css">
-   
+
     <title>Tạp chí khoa học Đại học Mở Thành phố Hồ Chí Minh</title>
 </head>
 
@@ -18,7 +19,6 @@
 
 
     <header class="block header1">
-        
         <section>
             <div class="area1">
                 <div class="flex">
@@ -34,38 +34,47 @@
                 </div>
             </div>
         </section>
-        <nav class="indam">
-            <div class="nax flex">
-                <div class="menu">
-                    <ul class="flex">
-                        <li><a href="/web/index.html">TRANG CHỦ</a></li>
-                        <li class="sub">
-                            <a href="#"> GIỚI THIỆU</a>
-                            <div class="menu">
-                                <ul class="gioithieu">
-                                    <li>
-                                        <a href="/web/mucdichphamvi.html">Mục đích</a>
-                                    </li>
-                                    <li>
-                                        <a href="/web/nhansu.html">Nhân sự</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">GỬI BÀI</a></li>
-                        <li><a href="#">CÁC SỐ ĐÃ RA</a></li>
-                        <li><a href="#">THÔNG BÁO</a></li>
-                        <li><a href="/web/lienhe.html">LIÊN HỆ</a></li>
-                    </ul>
+        <nav class="indam animate__animated animate__fadeInDown">
+            <div class="all">
+                <a href="#" class="home">≡ </a>
+
+                <div class="nax flex">
+                    <div class="menu">
+                        <ul class="flex">
+                            <li><a href="/web/index.html">TRANG CHỦ</a></li>
+                            <li class="sub">
+                                <a href="#" class="none"> GIỚI THIỆU</a>
+                                <a href="/web/mucdichphamvi.html" class="noen">MỤC ĐÍCH</a>
+
+                                <div class="menu">
+                                    <ul class="gioithieu">
+                                        <li>
+                                            <a href="/web/mucdichphamvi.html">Mục đích</a>
+                                        </li>
+                                        <li>
+                                            <a href="/web/nhansu.html">Nhân sự</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="noen"><a href="/web/nhansu.html">NHÂN SỰ</a></li>
+                            <li><a href="#">GỬI BÀI</a></li>
+                            <li><a href="#">CÁC SỐ ĐÃ RA</a></li>
+                            <li><a href="https://journalofscience.ou.edu.vn/index.php/soci-vi/announcement" target="_blank">THÔNG BÁO</a></li>
+                            <li><a href="/web/lienhe.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <ul class="flex">
+                            <li><a href="#" id="show-login">ĐĂNG NHẬP</a></li>
+                            <li><a href="#">TIẾNG VIỆT &#9660;</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="menu">
-                    <ul class="flex">
-                        <li><a href="#">ĐĂNG NHẬP</a></li>
-                        <li><a href="#">TIẾNG VIỆT</a></li>
-                    </ul>
-                </div>
+
             </div>
         </nav>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
     </header>
     <main>
         <div class="popup">
@@ -96,14 +105,14 @@
                 <div><span class="maudo">Cơ quan chủ quản:</span> Trường Đại học Mở Thành phố Hồ Chí Minh</div></br>
                 <div><span class="maudo">Cơ quan xuất bản:</span> Tạp chí khoa học Trường Đại học Mở Thành Phố Hồ
                     Chí Minh</div>
-                <div class="flex">
+                <div class="flex thongtinlienhe">
                     <div class="block1 box">
                         <div class="flex">
                             <div class="anh">
-                                <img src="/picture/address.png" alt="picture">
+                                <a href="https://maps.app.goo.gl/e276ziYzudb1wvhc8" target="_blank"><img src="/picture/address.png" alt="picture"></a>
                             </div>
                             <div class="name">
-                                <h1>ĐỊA CHỈ</h1>
+                                <h1><a href="https://maps.app.goo.gl/e276ziYzudb1wvhc8" target="_blank">ĐỊA CHỈ</h1></a>
                             </div>
                         </div>
                         <div></div>
@@ -111,21 +120,21 @@
                     <div class="block1 box">
                         <div class="flex ">
                             <div class="anh">
-                                <img src="/picture/avatar.png" alt="picture">
+                                <a href="mailto:journalofscience@ou.edu.vn" target="_blank"><img src="/picture/avatar.png" alt="picture"></a>
                             </div>
                             <div class="name">
-                                <h1>TỔNG BIÊN TẬP</h1>
+                                <h1><a href="mailto:journalofscience@ou.edu.vn" target="_blank">TỔNG BIÊN TẬP</a></h1>
                             </div>
                         </div>
                         <div></div>
                     </div>
                     <div class="block1 box">
-                        <div class="flex">
+                        <div class="flex block2">
                             <div class="anh">
-                                <img src="/picture/phone-removebg-preview.png" alt="picture">
+                                <a href="mailto:journalofscience@ou.edu.vn" target="_blank"><img src="/picture/phone-removebg-preview.png" alt="picture"></a>
                             </div>
                             <div class="name">
-                                <h1>THƯ KÝ TOÀN SOẠN</h1>
+                                <h1><a href="mailto:journalofscience@ou.edu.vn" target="_blank">THƯ KÝ TOÀN SOẠN</h1></a>
                             </div>
                         </div>
                         <div></div>
@@ -171,7 +180,7 @@
 
         </div>
         <div class="end">
-            &copy; 2024 HCMCOU. All rights reserved.
+            <span>&copy; 2024 HCMCOU. All rights reserved.</span>
         </div>
     </footer>
     </div>

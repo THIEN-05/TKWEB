@@ -20,13 +20,19 @@
     margin-right: auto;
     width: 100%;
 }
+.name a{
+    color: white;
+    text-decoration: none;
+}
 .box{  
-    border: 1px solid #c0c0c0;
+    border: 3px solid white;
     width: 33%;
-    background-color: #f2f2f2;
+    background: rgba(255,255,255,0.5);
     text-align: left;
     padding: 2rem;
     box-sizing: border-box;
     position: relative;
+    box-shadow: 3px 4px 5px white;
+    
 }
 
