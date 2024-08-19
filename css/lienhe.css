@@ -32,7 +32,16 @@
     padding: 2rem;
     box-sizing: border-box;
     position: relative;
-    box-shadow: 3px 4px 5px white;
-    
+    box-shadow: 3px 4px 5px white;   
 }
+.box:hover{
+    background:rgb(255, 255, 255,0.7);
+    color: black !important;
+    transform: scale(1.02,1.03);
+}
+.block1 div:hover{
+    color: aqua;
+    transform: scale(1.02,1.03);
+}
+
 

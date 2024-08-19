@@ -36,6 +36,11 @@ section {
 .logo img {
     width: 100%;
     padding-left: 2.5rem;
+    /* animation: animatelogo 6s infinite linear; */
+}
+
+.header1 img {
+    animation: animatelogo 10s infinite linear;
 }
 
 .indam {
@@ -43,9 +48,10 @@ section {
 }
 
 /*NAV*/
-.noen{
+.noen {
     display: none !important;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -64,19 +70,21 @@ header {
 }
 
 .header1 {
-   height: auto;
-    background: linear-gradient(black,blue, black);
+    height: auto;
+    background: linear-gradient(black, blue, black);
 }
-.header1 h1{
+
+.header1 h1 {
     font-size: 2rem;
     width: 100%;
     margin-bottom: 1rem;
     text-shadow: 3px 4px 5px whitesmoke;
 }
-.header1 img{
+
+.header1 img {
     width: 80%;
     box-shadow: 4px 5px 6px white;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     margin-bottom: 0.6rem;
     padding-left: 0rem;
     margin-left: 2rem;
@@ -118,7 +126,7 @@ nav {
 
 .nax {
     position: absolute;
-    width: 100%;  
+    width: 100%;
     background-color: #070a0e;
 }
 
@@ -170,20 +178,23 @@ nav {
 .sub:hover .gioithieu {
     display: block !important;
 }
-.all{
+
+.all {
     margin-top: 0 !important;
 }
-.home{
+
+.home {
     width: 100%;
-    top:0;
+    top: 0;
     text-decoration: none;
     color: white;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     padding-left: 4px;
-  padding-bottom: 2px;
+    padding-bottom: 2px;
     font-size: 3rem;
     display: none;
 }
+
 .menu>ul>li {
     position: relative;
     display: block;
@@ -215,7 +226,7 @@ nav {
 
 /*FOOTER*/
 footer {
-    background: linear-gradient(black,blue, black);
+    background: linear-gradient(black, blue, black);
     overflow: hidden;
 }
 
@@ -233,14 +244,13 @@ footer {
 }
 
 .inf111 {
-  margin-right: auto;
+    margin-right: auto;
     padding-right: 2rem;
 }
 
 .inf12 {
     padding-left: 4rem;
     padding-top: 1rem;
-    /* padding-bottom: 1rem; */
 }
 
 .inf2 {
@@ -276,7 +286,8 @@ footer {
     bottom: 10px;
     width: 90%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-decoration: none;
 }
 
 .click img {
@@ -401,6 +412,15 @@ html {
     text-decoration: underline;
 }
 
+@keyframes animatelogo {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    75% {
+        transform: rotateY(360deg);
+    }
+}
 
 @keyframes move {
     from {
@@ -411,6 +431,7 @@ html {
         left: 50%;
     }
 }
+
 /*go to top*/
 #myBtn {
     display: none;
@@ -420,8 +441,8 @@ html {
     z-index: 99;
     font-size: 18px;
     border: none;
-   
-    background: rgba(0,0,0,0.6);
+
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -429,5 +450,55 @@ html {
 }
 
 #myBtn:hover {
-  background-color: #555;
+    background-color: #555;
+}
+
+/*icon*/
+.icon {
+    width: 100%;
+}
+
+.icon img {
+    width: 30px;
+    padding: 3px;
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.icon img:hover {
+    border: 1px solid aqua;
+    border-radius: 50%;
+    transform: 2s;
+}
+
+/*show ảnh*/
+.popupanh {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999999999999999;
+    text-align: center;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.popupanh img {
+    height: 80vh;
+    margin-top: 6rem;
+    
+}
+a.closeanh{
+    font-size: 3rem;
+    text-decoration: none;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    color: white;
+}
+.show{
+    display: block !important;
 }
