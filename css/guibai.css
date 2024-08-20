@@ -1,0 +1,27 @@
+/*Lưu ý*/
+.luuy {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.luuy img {
+    width: 24px; 
+    margin-right: 15px; 
+}
+
+.luuy a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.luuy a:hover {
+    text-decoration: underline;
+}

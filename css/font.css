@@ -23,6 +23,19 @@ section {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3; 
+    pointer-events: none; 
+    z-index: -1; 
+    width: 400px;
+    height: auto;
+}
+
+
 
 /*header*/
 .tentruong {
@@ -226,7 +239,7 @@ nav {
 
 /*FOOTER*/
 footer {
-    background: linear-gradient(black, blue, black);
+    background: linear-gradient(black,blue,black);
     overflow: hidden;
 }
 
@@ -284,10 +297,11 @@ footer {
     color: white;
     padding: 0;
     bottom: 10px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     font-size: 3rem;
     text-decoration: none;
+    animation: bounce 2s ease infinite;
 }
 
 .click img {
@@ -315,7 +329,7 @@ html {
 }
 
 
-/**/
+/*POPUP LOGIN*/
 .popup {
     display: none;
     position: fixed;
@@ -324,10 +338,33 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    /* Giảm opacity nền */
     justify-content: center;
     align-items: center;
-    z-index: 99999999999999999;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; 
+}
+
+.popup.fade-out {
+    animation: fadeOut 0.5s forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .content {
@@ -337,22 +374,43 @@ html {
     width: 300px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    z-index: 1000;
-    /* Đảm bảo nội dung hiển thị trên nền */
+    position: relative;
+    transform: scale(0.8);
+    animation: scaleUp 0.3s forwards; 
 }
 
 .content>h2 {
     color: black !important;
 }
 
+.content.fade-out {
+    animation: scaleDown 0.3s forwards; 
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+
 .close {
-    color: rgb(247, 246, 246);
+    color: black;
     position: absolute;
-    top: 3rem;
-    z-index: 999999999999999999;
+    top: 10px;
     right: 15px;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 24px;
     cursor: pointer;
 }
 
@@ -411,6 +469,8 @@ html {
 .form-element a:hover {
     text-decoration: underline;
 }
+
+/*LOGO*/
 
 @keyframes animatelogo {
     0% {
