@@ -297,7 +297,7 @@ footer {
     color: white;
     padding: 0;
     bottom: 10px;
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: 3rem;
     text-decoration: none;
@@ -348,6 +348,7 @@ html {
 .popup.fade-out {
     animation: fadeOut 0.5s forwards; 
 }
+/**/
 
 @keyframes fadeIn {
     from {

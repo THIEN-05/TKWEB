@@ -22,9 +22,8 @@ window.onload = function () {
 
         setTimeout(function() {
             popup.style.display = "none"; // Ẩn popup sau khi animation kết thúc
-            popup.classList.remove("fade-out"); // Đặt lại lớp fade-out để sẵn sàng cho lần mở tiếp theo
-            content.classList.remove("fade-out"); // Đặt lại lớp fade-out cho nội dung
-        }, 500); // Thời gian trùng với thời gian animation
+            popup.classList.remove("fade-out"); //
+        }, 500); 
     });
 //wow
     wow = new WOW(
