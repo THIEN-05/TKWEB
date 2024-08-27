@@ -7,11 +7,24 @@ window.onload = function () {
         f.classList.add("animate__pulse");
 
 //dang nhap
-    document.getElementById("show-login").addEventListener("click", function () {
-        document.querySelector(".popup").style.display = "flex";
+    document.getElementById("show-login").addEventListener("click", function(event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+        const popup = document.querySelector(".popup");
+        popup.style.display = "flex";
+        popup.classList.remove("fade-out"); // Xóa lớp fade-out nếu có
     });
-    document.querySelector(".close").addEventListener("click", function () {
-        document.querySelector(".popup").style.display = "none";
+
+    document.querySelector(".close").addEventListener("click", function() {
+        const popup = document.querySelector(".popup");
+        popup.classList.add("fade-out"); // Thêm lớp fade-out để kích hoạt animation
+        const content = document.querySelector(".content");
+        content.classList.add("fade-out"); // Thêm lớp fade-out cho nội dung
+
+        setTimeout(function() {
+            popup.style.display = "none"; // Ẩn popup sau khi animation kết thúc
+            popup.classList.remove("fade-out"); // Đặt lại lớp fade-out để sẵn sàng cho lần mở tiếp theo
+            content.classList.remove("fade-out"); // Đặt lại lớp fade-out cho nội dung
+        }, 500); // Thời gian trùng với thời gian animation
     });
 //wow
     wow = new WOW(
