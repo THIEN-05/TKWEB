@@ -1,7 +1,7 @@
 /*ALL*/
 body {
     font-family: "Montserrat";
-    background: linear-gradient(rgb(1, 1, 6), rgb(2, 2, 50));
+    background: linear-gradient(#1F316F, #96C9F4,#1F316F);
     color: white;
 }
 
@@ -50,7 +50,6 @@ section {
 .logo img {
     width: 100%;
     padding-left: 2.5rem;
-    /* animation: animatelogo 6s infinite linear; */
 }
 
 .header1 img {
@@ -85,13 +84,11 @@ header {
 
 .header1 {
     height: auto;
-    background: linear-gradient(black, blue, black);
-}
-
+    background-color: #1F316F;}
 .header1 h1 {
     font-size: 2rem;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-shadow: 3px 4px 5px whitesmoke;
 }
 
@@ -102,6 +99,7 @@ header {
     margin-bottom: 0.6rem;
     padding-left: 0rem;
     margin-left: 2rem;
+    animation: pulse 2s ease infinite;
 }
 
 .vi-bg {
@@ -129,6 +127,7 @@ header {
 .logo {
     float: left;
     margin: auto 0;
+   
 }
 
 nav {
@@ -141,7 +140,7 @@ nav {
 .nax {
     position: absolute;
     width: 100%;
-    background-color: #070a0e;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .menu>ul {
@@ -240,7 +239,7 @@ nav {
 
 /*FOOTER*/
 footer {
-    background: linear-gradient(black,blue,black);
+    background: linear-gradient(#1F316F,#5B99C2,#1F316F);
     overflow: hidden;
 }
 
@@ -470,18 +469,7 @@ html {
 .form-element a:hover {
     text-decoration: underline;
 }
-
-/*LOGO*/
-
-@keyframes animatelogo {
-    0% {
-        transform: rotateY(0deg);
-    }
-
-    75% {
-        transform: rotateY(360deg);
-    }
-}
+/*footer*/
 
 @keyframes move {
     from {

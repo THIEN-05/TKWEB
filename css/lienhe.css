@@ -8,7 +8,14 @@
     border-radius: 10px 10px 10px 10px;
    
 }
-
+.block2>div{
+    font-weight: bold;
+    text-align: center;
+    
+}
+.block2>div:first-child{
+    margin-top: 2rem;
+}
 .block1>div{
     font-weight: bold;
     text-align: center;
