@@ -1,0 +1,56 @@
+.left{
+    width: 80%;
+ 
+}
+.right{
+
+    width: 20%;
+    margin: 0 auto;
+}
+.rightcon{
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 2rem;
+   margin-top: 2rem !important;
+    background: rgba(0, 0, 0, 0.1);
+}
+.day{
+    background-color: #295F98;
+    padding: 1rem 4rem 1rem 2rem; 
+}
+.allbody{
+    display: flex;
+}
+
+.title{
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-top: 1px dashed white;
+}
+.title1{
+    text-align: center;
+}
+.title1>a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+.title1>a:hover{
+    color: aqua;
+   transition: 1s;
+}
+.nganh{
+    padding: 2rem;
+}
+.nganh img{
+    width: 40rem;
+}
+p a{
+    color: orange;
+    text-decoration: none;
+}
+p a:hover{
+    color: aqua;
+    transition: 1s;
+}

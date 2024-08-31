@@ -1,7 +1,7 @@
 /*ALL*/
 body {
     font-family: "Montserrat";
-    background: linear-gradient(#1F316F, #96C9F4,#1F316F);
+    background: linear-gradient(#1F316F, #295F98,#1F316F);
     color: white;
 }
 
@@ -173,7 +173,7 @@ nav {
     position: absolute;
     padding: 0;
     margin: 0;
-    background-color: #010107;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .gioithieu>li {
@@ -211,7 +211,7 @@ nav {
 .menu>ul>li {
     position: relative;
     display: block;
-    transition: 0.5s;
+    transition: 1s;
     cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ nav {
     height: 3px;
     top: 100%;
     left: 0;
-    transition: transform 0.5s;
+    transition: transform 1s;
     transform: scaleX(0);
     transform-origin: right;
     background-color: white;
