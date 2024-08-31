@@ -25,6 +25,25 @@ window.onload = function () {
             popup.classList.remove("fade-out"); //
         }, 500); 
     });
+
+    document.getElementById("show-login-2").addEventListener("click", function(event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+        const popup = document.querySelector(".popup");
+        popup.style.display = "flex";
+        popup.classList.remove("fade-out"); // Xóa lớp fade-out nếu có
+    });
+
+    document.querySelector(".close").addEventListener("click", function() {
+        const popup = document.querySelector(".popup");
+        popup.classList.add("fade-out"); // Thêm lớp fade-out để kích hoạt animation
+        const content = document.querySelector(".content");
+        content.classList.add("fade-out"); // Thêm lớp fade-out cho nội dung
+
+        setTimeout(function() {
+            popup.style.display = "none"; // Ẩn popup sau khi animation kết thúc
+            popup.classList.remove("fade-out"); //
+        }, 500); 
+    });
 //wow
     wow = new WOW(
         {

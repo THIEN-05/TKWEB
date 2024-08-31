@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/css/guibai.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/mobileindex.css" media="screen and (max-width:600px)">
     <script src="/javasrip/test.js"></script>
 </head>
@@ -41,12 +42,15 @@
         <nav class="indam animate__animated animate__fadeInDown">
             <div class="all">
                 <a href="#" class="home">≡ </a>
+
                 <div class="nax flex">
                     <div class="menu">
                         <ul class="flex">
                             <li><a href="/web/index.html">TRANG CHỦ</a></li>
                             <li class="sub">
-                                <a href="#" class="none">GIỚI THIỆU</a>
+                                <a href="#" class="none"> GIỚI THIỆU</a>
+                                <a href="/web/mucdichphamvi.html" class="noen">MỤC ĐÍCH</a>
+
                                 <div class="menu">
                                     <ul class="gioithieu">
                                         <li>
@@ -60,8 +64,9 @@
                             </li>
                             <li class="noen"><a href="/web/nhansu.html">NHÂN SỰ</a></li>
                             <li><a href="guibai.html">GỬI BÀI</a></li>
-                            <li><a href="/web/sobao.html">CÁC SỐ ĐÃ RA</a></li>
-                            <li><a href="https://journalofscience.ou.edu.vn/index.php/soci-vi/announcement" target="_blank">THÔNG BÁO</a></li>
+                            <li><a href="#">CÁC SỐ ĐÃ RA</a></li>
+                            <li><a href="https://journalofscience.ou.edu.vn/index.php/soci-vi/announcement"
+                                    target="_blank">THÔNG BÁO</a></li>
                             <li><a href="/web/lienhe.html">LIÊN HỆ</a></li>
                         </ul>
                     </div>
@@ -90,6 +95,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </nav>
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
@@ -120,57 +126,89 @@
         </div>
         
         <img src="/picture/Logo-DH-Mo-TPHCM-OU-300x198 (trắng).png" alt="Watermark" class="watermark">
-       <section>
-        <h1 style="text-align: center;">TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH</h1>
-        <h3 style="text-align: center;">Lựa chọn chuyên ngành</h3>
-        <div class="books flex">
-            <div class="book">
-                <a href="https://journalofscience.ou.edu.vn/index.php/econ-en/issue/archive"> <img src="https://journalofscience.ou.edu.vn/plugins/themes/ou/assets/img/home/journal/econ_en-01-min.jpg"
-                        alt="picture">
-                </a>
-                <a href="https://journalofscience.ou.edu.vn/index.php/econ-en/issue/archive">
-                    <h5>ECONOMICS AND BUSINESS ADMINISTRATION</h5>
-                </a>
+        <section>
+            <h3>Hồ sơ</h3>
+            <div class="flex">
+                <div class="form-element">
+                    <label for="lastName">Họ đệm<span class="text-danger">*</span></label>
+                    <input type="text" id="lastName" placeholder="Nhập họ đệm">
+                </div>
+                <div class="form-element">
+                    <label for="firstName">Tên<span class="text-danger">*</span></label>
+                    <input type="text" id="firstName" placeholder="Nhập tên">
+                </div>
             </div>
-            <div class="book">
-                <a href="https://journalofscience.ou.edu.vn/index.php/soci-en"> <img src="https://journalofscience.ou.edu.vn/plugins/themes/ou/assets/img/home/journal/tech_en-01-min.jpg"
-                        alt="picture"></a>
-                <a href="https://journalofscience.ou.edu.vn/index.php/soci-en">
-                    <h5>ENGINEERING AND TECHNOLOGY</h5>
-                </a>
+            <div class="flex">
+                <div class="form-element">
+                    <label for="password">Mật khẩu<span class="text-danger">*</span></label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-element">
+                    <label for="confirmPassword">Nhập lại mật khẩu<span class="text-danger">*</span></label>
+                    <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu">
+                </div>
             </div>
-            <div class="book">
-                <a href="https://journalofscience.ou.edu.vn/index.php/soci-en/issue/archive"><img src="https://journalofscience.ou.edu.vn/plugins/themes/ou/assets/img/home/journal/soci_en-01-min.jpg"
-                        alt="picture"></a>
-                <a href="https://journalofscience.ou.edu.vn/index.php/soci-en/issue/archive">
-                    <h5>SOCIAL SCIENCES</h5>
-                </a>
+            <div class="flex">
+                <div class="form-element">
+                    <label for="phone">Điện thoại<span class="text-danger">*</span></label>
+                    <input type="text" id="phone" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email<span class="text-danger">*</span></label>
+                    <input type="text" id="email" placeholder="Nhập email">
+                </div>
             </div>
-        </div>
-        <div class="books flex">
-            <div class="book">
-                <a href="https://journalofscience.ou.edu.vn/index.php/econ-vi/issue/archive"><img src="https://journalofscience.ou.edu.vn/plugins/themes/ou/assets/img/home/journal/econ_vi-01-min.jpg"
-                        alt="picture"></a>
-                <a href="https://journalofscience.ou.edu.vn/index.php/econ-vi/issue/archive">
-                    <h5>KINH TÉ VÀ QUẢN TRỊ KINH DOANH</h5>
-                </a>
+            <div class="flex">
+                <div class="form-element">
+                    <label for="degreeId">Chức danh<span class="text-danger">*</span></label>
+                    <select class="form-selection" id="degreeId" name="degreeId">
+                        <option selected value="0">Chưa chọn</option>
+                        <option value="1">Giáo sư</option>
+                        <option value="2">Phó Giáo sư</option>
+                        <option value="3">Tiến sĩ Khoa học</option>
+                        <option value="4">Tiến sĩ</option>
+                        <option value="5">Thạc sĩ</option>
+                        <option value="6">Bác sĩ</option>
+                        <option value="7">Dược sĩ</option>
+                        <option value="8">Kỹ sư</option>
+                        <option value="9">Cử nhân</option>
+                        <option value="10">Khác</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="date">Ngày sinh</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-element">
+                    <label for="gender">Giới tính<span class="text-danger">*</span></label>
+                    <select class="form-selection" id="gender" name="gender">
+                        <option selected value="0">Chưa chọn</option>
+                        <option value="1">Nam</option>
+                        <option value="2">Nữ</option>
+                        <option value="3">Khác</option>
+                    </select>
+                </div>
             </div>
-            <div class="book">
-                <a href="https://journalofscience.ou.edu.vn/index.php/tech-vi"><img src="../picture/book5.png"
-                        alt="picture"></a>
-                <a href="https://journalofscience.ou.edu.vn/index.php/tech-vi">
-                    <h5>KỸ THUẬT VÀ CÔNG NGHỆ</h5>
-                </a>
+            <div class="form-element">
+                <label for="research">Lĩnh vực nghiên cứu<span class="text-danger">*</span></label>
+                <select class="form-selection" id="research" name="research">
+                    <option selected value="0">Chưa chọn</option>
+                    <option value="1">KINH TẾ VÀ QUẢN TRỊ KINH DOANH</option>
+                    <option value="2">KỸ THUẬT VÀ CÔNG NGHỆ</option>
+                    <option value="3">KHOA HỌC XÃ HỘI</option>
+                </select>
             </div>
-            <div class="book">
-                <a href="https://journalofscience.ou.edu.vn/index.php/soci-vi"> <img src="../picture/book6.png"
-                        alt="picture"></a>
-                <a href="https://journalofscience.ou.edu.vn/index.php/soci-vi">
-                    <h5>KHOA HỌC XÃ HỘI</h5>
-                </a>
+            <div class="form-element">
+                <label for="workplace">Đơn vị công tác<span class="text-danger">*</span></label>
+                <input type="text" id="workplace" placeholder="Nhập đơn vị công tác">
             </div>
-        </div>
+            <div>
+                <input type="checkbox" id="allow-privacy">
+                <label for="allow-privacy">Chấp nhận Điều khoản và Chính sách quyền riêng tư</label>
+            </div>
+            <button type="button" class="submit-button">Đăng ký</button>
         </section>
+        
     </main>
     <footer class="information block">
         <div class="information flex">

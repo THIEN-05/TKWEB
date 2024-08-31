@@ -23,6 +23,7 @@ section {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
 .watermark {
     position: fixed;
     top: 50%;
@@ -33,6 +34,10 @@ section {
     z-index: -1; 
     width: 400px;
     height: auto;
+}
+
+.text-danger {
+    color: red !important;
 }
 
 
@@ -161,6 +166,7 @@ nav {
     color: white;
     padding: 1rem;
     display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu>ul>li>a:hover {
@@ -169,11 +175,18 @@ nav {
 }
 
 .gioithieu {
-    display: none !important;
+    display: block;
     position: absolute;
+    top: 100%;
+    left: 0;
     padding: 0;
     margin: 0;
-    background-color: #010107;
+    background-color: black;
+    border-radius: 5px;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .gioithieu>li {
@@ -186,10 +199,14 @@ nav {
     color: white;
     padding: 0.2rem;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .sub:hover .gioithieu {
     display: block !important;
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .all {
@@ -206,6 +223,11 @@ nav {
     padding-bottom: 2px;
     font-size: 3rem;
     display: none;
+    transition: transform 0.3s ease;
+}
+
+.home:hover {
+    transform: rotate(90deg);
 }
 
 .menu>ul>li {

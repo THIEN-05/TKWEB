@@ -61,6 +61,7 @@
 }
 
 .nut {
+    text-decoration: none;
     background-color: #4472c4;
     color: white;
     padding: 0.7rem 1.8rem;
