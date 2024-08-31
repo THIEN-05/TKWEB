@@ -21,9 +21,12 @@
 .allbody{
     display: flex;
 }
-
+p{
+    padding: 1.5rem;
+}
 .title{
     padding: 1rem;
+    padding-left: 0;
     font-size: 1.3rem;
     font-weight: bold;
     border-top: 1px dashed white;
@@ -42,9 +45,11 @@
 }
 .nganh{
     padding: 2rem;
+    text-align: center;
 }
 .nganh img{
-    width: 40rem;
+    width: 80%;
+  
 }
 p a{
     color: orange;
@@ -54,3 +59,4 @@ p a:hover{
     color: aqua;
     transition: 1s;
 }
+

@@ -16,10 +16,14 @@
     width: 24px; 
     margin-right: 15px; 
 }
-
-.luuy a {
-    color: #007bff;
+main a:hover{
+    color: aquamarine;
+    transition: 0.8s;
+}
+main a {
+    color: #edd294;
     text-decoration: none;
+    font-style: italic;
 }
 
 .luuy a:hover {

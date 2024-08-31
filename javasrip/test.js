@@ -26,6 +26,8 @@ window.onload = function () {
             content.classList.remove("fade-out"); // Đặt lại lớp fade-out cho nội dung
         }, 500); // Thời gian trùng với thời gian animation
     });
+    
+  
 //wow
     wow = new WOW(
         {
@@ -37,7 +39,7 @@ window.onload = function () {
         }
     )
     wow.init();
-    //show ảnh
+    // show ảnh
     let myimg = document.getElementsByTagName("img");
     let myim = document.getElementById("popimg");
     let popup = document.querySelector(".popupanh");
@@ -52,7 +54,7 @@ window.onload = function () {
         popup.classList.remove("show");
     }
 }
-//go to top
+// go to top
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
