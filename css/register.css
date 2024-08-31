@@ -9,6 +9,10 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.flex1{
+    display: flex;
+    justify-content: space-between;
+}
 
 .form-element {
     flex: 0 0 48%;
@@ -35,6 +39,9 @@ h3 {
 
 .form-element input[type="checkbox"] {
     margin-right: 10px;
+}
+button{
+    margin-bottom: 2rem;
 }
 
 .text-danger {
