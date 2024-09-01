@@ -1,25 +1,29 @@
-.left{
-    width: 80%;
- 
-}
 .right{
+    width: 80%;
+    padding: 1rem;
+    padding-right: 3rem;
+
+}
+.left{
 
     width: 20%;
     margin: 0 auto;
 }
-.rightcon{
+/* .rightcon{
     padding: 1rem;
     margin: 1rem;
     margin-left: 2rem;
    margin-top: 2rem !important;
     background: rgba(0, 0, 0, 0.1);
-}
+} */
 .day{
     background-color: #295F98;
     padding: 1rem 4rem 1rem 2rem; 
 }
 .allbody{
     display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 p{
     padding: 1.5rem;
@@ -30,6 +34,14 @@ p{
     font-size: 1.3rem;
     font-weight: bold;
     border-top: 1px dashed white;
+}
+.title:first-child{
+    border-top: none;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-shadow: 3px 2px 4px whitesmoke;
+    animation: doimau 1s infinite;
 }
 .title1{
     text-align: center;
@@ -49,7 +61,7 @@ p{
 }
 .nganh img{
     width: 80%;
-  
+ 
 }
 p a{
     color: orange;
@@ -59,4 +71,11 @@ p a:hover{
     color: aqua;
     transition: 1s;
 }
-
+@keyframes doimau{
+   from{
+      color: rgb(165, 165, 193);
+    }
+    to{
+        color: aqua;
+    }
+}

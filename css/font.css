@@ -1,4 +1,15 @@
 /*ALL*/
+/*/ left*/
+.left{
+    width: 20%;
+    background-color: white;
+    border-radius: 2rem;
+}
+.left img{
+    width: 70%;
+    padding: 1rem;
+    padding-left: 2rem;
+}
 body {
     font-family: "Montserrat";
     background: linear-gradient(#1F316F, #295F98,#1F316F);

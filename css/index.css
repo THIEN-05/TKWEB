@@ -41,19 +41,24 @@
     width: 80%;
     position: relative;
     max-width: 48rem;
-    margin: 0 auto;
-
-
+    margin:  auto;
+    
 }
 .linktb{
     width: 30%;
     display: block;
+   
 }
-.linktb div{
+.linktb .tintuc{
     padding: 1rem;
     padding-left: 0;
+    width: 100%;
     border-bottom: 0.5px solid #fff;
 }
+.linktb .tintuc:last-child{
+    border-bottom: none;
+}
+
 .linktb a{
     color: #fff;
     text-decoration: none;
@@ -61,23 +66,38 @@
 .linktb a:hover{
     color:aquamarine;
 }
+.tintuc img{
+    width: 100%;
+    padding: 0;
+    border-radius: 1rem;
+}
+.tintuc1{
+    width: 30%;
+    
+}
+.tintuc2{
+    width: 70%;
+    padding-left: 1rem;
+}
 .slider{
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.25);
     border-radius: 0.5rem;
+  
 }
 .slider img{
     flex: 1 0 100%;
     object-fit: cover;
     width: 100%;
+    
 }
 .slider-nav{
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    bottom: 1.25rem;
+    bottom: 0.8rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1999999999;
@@ -99,7 +119,7 @@
 .right{
     width: 80%;
     padding-right: 5rem;
-    /* border-right: 1px solid white; */
+   
 }
 .left{
     width: 20%;
@@ -157,111 +177,3 @@
     margin-bottom: 2.5rem;
     border-bottom: none;
 }
-
-/* .book {
-    width: 30%;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-   
-     position: relative; 
-}
-.book>a{
-    text-decoration: none;
-}
-.book>a>h5{
-    text-decoration: none;
-    color: white;
-}
-.book>a>h5:hover{
-    color: aqua;
-}
-
-.book img {
-    width: 100%;
-    box-shadow: 0.8rem 0.8rem 0.8rem rgba(240, 229, 229, 0.5);
-}
-.book img:hover{
-    transform: scale(1.02,1.03);
-    transition: 1s;
-}
-
-.dam {
-    font-weight: bold;
-}
-
-.course {
-    width: 70%;
-    margin: 0 auto;
-    padding: 3rem;
-   
-}
-
-.forum {
-  background-color: #90caf9;
-    border: 4px solid #283593;
-    border-radius: 10px 10px 10px 10px;
-    padding: 2rem;
-    animation: doimau 1s infinite;
-}
-
-.forum>h1 {
-    margin-left: 1rem;
-    color: black;
-    text-shadow:3px 2px 4px #283593;
-}
-
-.nut {
-    background-color: #4472c4;
-    color: white;
-    padding: 0.7rem 1.8rem;
-    margin-right: 1rem;
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid #3066be;
-    cursor: pointer;
-    
-}
-.nut:hover{
-    color: #283593;
-    background-color: whitesmoke;
-}
-.kitu>a {
-    color: #61dbf3;
-    text-decoration: none;  
-}
-
-.kitu>a:hover{
-    color: #dfb20ed4;
-    transition: 0.7s;
-}
-.kitu {
-    padding-bottom: 1rem;
-    border-bottom: 1px ;
-}
-.kitu:last-child{
-    margin-bottom: 2.5rem;
-}
-
-.chuky>li {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.chuky1 {
-    border-top: 1px dashed whitesmoke;
-}
-
-
-@keyframes doimau{
-   from{
-    background-color: #90caf9;
-   }
-   to{
-    background-color: whitesmoke;
-   }
-
-} */
