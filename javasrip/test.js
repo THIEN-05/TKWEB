@@ -26,6 +26,26 @@ window.onload = function () {
             content.classList.remove("fade-out"); // Đặt lại lớp fade-out cho nội dung
         }, 500); // Thời gian trùng với thời gian animation
     });
+
+    document.getElementById("show-login-2").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        const popup = document.querySelector(".popup");
+        popup.style.display = "flex";
+        popup.classList.remove("fade-out"); 
+    });
+
+    document.querySelector(".close").addEventListener("click", function() {
+        const popup = document.querySelector(".popup");
+        popup.classList.add("fade-out"); 
+        const content = document.querySelector(".content");
+        content.classList.add("fade-out"); 
+
+        setTimeout(function() {
+            popup.style.display = "none"; 
+            popup.classList.remove("fade-out"); 
+            content.classList.remove("fade-out"); 
+        }, 500);
+    });
     
   
 //wow
@@ -69,3 +89,4 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
