@@ -160,9 +160,6 @@ nav {
     margin: 0;
 }
 
-
-
-
 .menu>ul>li:first-child {
     border-left: none;
 }
@@ -172,19 +169,28 @@ nav {
     color: white;
     padding: 1rem;
     display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu>ul>li>a:hover {
     background-color: transparent;
     color: white;
+    border-radius: 5px;
 }
 
 .gioithieu {
-    display: none !important;
+    display: block; /* Đặt display block để sử dụng max-height */
     position: absolute;
+    top: 100%;
+    left: 0;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #010107;
+    border-radius: 5px;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .gioithieu>li {
@@ -197,10 +203,14 @@ nav {
     color: white;
     padding: 0.2rem;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .sub:hover .gioithieu {
     display: block !important;
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .all {
@@ -333,6 +343,7 @@ html {
 .email {
     color: whitesmoke;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .email:hover {
