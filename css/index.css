@@ -70,6 +70,7 @@
     width: 100%;
     padding: 0;
     border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(55,0,0,0.5);
 }
 .tintuc1{
     width: 30%;
@@ -83,7 +84,7 @@
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.25);
+    box-shadow: 0 1.5rem 3rem rgba(255, 255, 255, 0.25);
     border-radius: 0.5rem;
   
 }
@@ -140,6 +141,12 @@
     padding: 10px;
     box-sizing: border-box;
      position: relative; 
+}
+.book img{
+    transition: .5s;
+}
+.books:hover img:not(:hover){
+    filter: blur(25px);
 }
 .book>a{
     text-decoration: none;

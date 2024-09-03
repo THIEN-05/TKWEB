@@ -59,6 +59,36 @@ button{
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.submit-button::before{
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+   
+    transition: .5s;
+}
+.submit-button::after{
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 100%;
+    top:0;
+    left: 100%;
+   
+    transition: 0.5s;
+}
+.submit-button:hover::before{
+    left: 0;
+}
+.submit-button:hover::after{
+    left: 50%;
 }
 
 .submit-button:hover {
