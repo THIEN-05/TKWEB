@@ -1,15 +1,26 @@
-/*ALL*/
+
 /*/ left*/
 .left{
     width: 20%;
     background-color: white;
     border-radius: 2rem;
+    text-align: center;
 }
 .left img{
     width: 70%;
     padding: 1rem;
     padding-left: 2rem;
 }
+.leftstring{
+    color: white;
+    background-color: #1589b4;
+    z-index: 9999999;
+    text-align: center;
+    padding: 0.8rem;
+    width: 60%;
+    margin: 0 auto;
+}
+/*ALL*/
 body {
     font-family: "Montserrat";
     background: linear-gradient(#1F316F, #295F98,#1F316F);

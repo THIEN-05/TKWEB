@@ -122,7 +122,7 @@
     padding-right: 5rem;
    
 }
-.left{
+/* .left{
     width: 20%;
     background-color: white;
     border-radius: 2rem;
@@ -132,6 +132,11 @@
     padding: 1rem;
     padding-left: 2rem;
 }
+.leftstring{
+    color: #61dbf3;
+    background-color: aqua;
+    z-index: 9999999;
+} */
 
 .book {
     margin: 0 auto;

@@ -5,6 +5,39 @@
      padding: 0;
      margin: 0;
  }
+    .flex1{
+    flex-direction: column;
+     align-items: initial;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+ }
+.left{
+    width: 100%;
+}
+.right{
+    width: 100%;
+}
+.tintuc1{
+    width: 100%;
+    text-align: center;
+}
+.tintuc{
+   display: block;
+    text-align: center;
+    width: 100%;
+}
+.linktb{
+   
+    width: 100%;
+}
+.linktb .tintuc1{
+    display: none;
+}
+.tintuc2{
+    text-align: center;
+    margin-left: 2rem;
+}
 
  .home {
      display: block;
