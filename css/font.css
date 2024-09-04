@@ -32,6 +32,9 @@ body {
 }
 
 
+.all {
+    margin-top: 0 !important;
+}
 main {
     top: 0;
 }
@@ -76,6 +79,7 @@ section {
 .logo img {
     width: 100%;
     padding-left: 2.5rem;
+    z-index: 1;
 }
 
 .noen {
@@ -179,16 +183,14 @@ nav {
 }
 
 .gioithieu {
-    display: block; 
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
     padding: 0;
     margin: 0;
+    width: 100%;
     background-color: #010107;
-    border-radius: 5px;
-    max-height: 0;
-    opacity: 0;
     transform: translateY(-10px);
     transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
@@ -203,18 +205,12 @@ nav {
     color: white;
     padding: 0.2rem;
     text-align: center;
-    transition: background-color 0.3s ease;
 }
 
 .sub:hover .gioithieu {
     display: block !important;
-    max-height: 300px;
-    opacity: 1;
     transform: translateY(0);
-}
-
-.all {
-    margin-top: 0 !important;
+    z-index:999;
 }
 
 .home {
