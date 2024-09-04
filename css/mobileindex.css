@@ -13,14 +13,25 @@
      margin: 0;
  }
 .left{
-    width: 100%;
+    width: 100% !important;
+}
+.area{
+  margin-top: 13rem;
 }
 .right{
-    width: 100%;
+    width: 100%;   
 }
 .tintuc1{
     width: 100%;
     text-align: center;
+}
+.allbody{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+ 
 }
 .tintuc{
    display: block;
@@ -38,6 +49,14 @@
     text-align: center;
     margin-left: 2rem;
 }
+.lienhe{
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+ 
+}
+
 
  .home {
      display: block;
