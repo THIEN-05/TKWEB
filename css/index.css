@@ -1,5 +1,5 @@
 
-/* main*/
+
 /*section 1*/
 .tuade {
     color: white;
@@ -74,12 +74,13 @@
 }
 .tintuc1{
     width: 30%;
-    
 }
 .tintuc2{
     width: 70%;
     padding-left: 1rem;
 }
+/*slider*/
+
 .slider{
     display: flex;
     overflow-x: hidden;
@@ -94,6 +95,25 @@
     width: 100%;
     
 }
+
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;    
+}
+.buttons button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff9;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
 .slider-nav{
     display: flex;
     column-gap: 1rem;
@@ -110,9 +130,11 @@
     border-radius: 50%;
     opacity: 0.75;
 }
+
 .slider-nav a:hover{
     opacity: 1;
 }
+
 /*section2*/
 .flex1{
     display: flex;
@@ -122,21 +144,6 @@
     padding-right: 5rem;
    
 }
-/* .left{
-    width: 20%;
-    background-color: white;
-    border-radius: 2rem;
-}
-.left img{
-    width: 70%;
-    padding: 1rem;
-    padding-left: 2rem;
-}
-.leftstring{
-    color: #61dbf3;
-    background-color: aqua;
-    z-index: 9999999;
-} */
 
 .book {
     margin: 0 auto;

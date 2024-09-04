@@ -135,4 +135,5 @@ document.addEventListener('DOMContentLoaded', function () {
             languageMenu.appendChild(switchToEn);
         }
     }
+
 });
