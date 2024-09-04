@@ -1,16 +1,18 @@
 
-/*/ left*/
+/* left*/
 .left{
     width: 20%;
     background-color: white;
     border-radius: 2rem;
     text-align: center;
 }
+
 .left img{
     width: 70%;
     padding: 1rem;
     padding-left: 2rem;
 }
+
 .leftstring{
     color: white;
     background-color: #1589b4;
@@ -25,7 +27,10 @@ body {
     font-family: "Montserrat";
     background: linear-gradient(#1F316F, #295F98,#1F316F);
     color: white;
+    margin: 0;
+    padding: 0;
 }
+
 
 main {
     top: 0;
@@ -39,6 +44,9 @@ main {
 
 .block {
     display: block;
+}
+.indam {
+    font-weight: bold;
 }
 
 section {
@@ -57,16 +65,12 @@ section {
     width: 400px;
     height: auto;
 }
-
-
-
 /*header*/
 .tentruong {
     color: white;
     margin: 0 auto;
     padding-left: 2.5rem;
     text-align: center;
-
 }
 
 .logo img {
@@ -74,25 +78,9 @@ section {
     padding-left: 2.5rem;
 }
 
-.header1 img {
-    animation: animatelogo 10s infinite linear;
-}
-
-.indam {
-    font-weight: bold;
-}
-
-/*NAV*/
 .noen {
     display: none !important;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-
-}
-
 
 .fix {
     clear: both;
@@ -106,7 +94,9 @@ header {
 
 .header1 {
     height: auto;
-    background-color: #295F98;}
+    background-color: #295F98;
+}
+
 .header1 h1 {
     font-size: 2rem;
     width: 100%;
@@ -180,7 +170,6 @@ nav {
     color: white;
     padding: 1rem;
     display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu>ul>li>a:hover {
@@ -190,7 +179,7 @@ nav {
 }
 
 .gioithieu {
-    display: block; /* Đặt display block để sử dụng max-height */
+    display: block; 
     position: absolute;
     top: 100%;
     left: 0;
